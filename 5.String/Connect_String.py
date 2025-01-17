@@ -1,0 +1,6 @@
+# Connect string usingname space
+
+a = "Hello"
+b = "World"
+c = a + " " + b
+print(c)
