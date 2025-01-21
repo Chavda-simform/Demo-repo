@@ -1,0 +1,21 @@
+-- max is use for gatting maximum value in funcion 
+
+SELECT MAX(age) from student;
+
+-- Count is use for count of all values
+
+SELECT COUNT(AGE) FROM STUDENT;
+
+-- SUM IS USE FOR SUMIGION OF ALL VALUS
+SELECT SUM(AGE) FROM STUDENT;
+
+
+-- AVG IS USE FOR FIMDMG AVRAGE IN TALBES;
+
+SELECT AVG(AGE) FROM STUDENT;
+
+--  IN IS USE FOR LIST ALL POSIBLE VALUES IN LIST
+
+
+SELECT * FROM STUDNT
+WHERE NAME IN ('PRIT', 'DHRUV', 'PRIT');
