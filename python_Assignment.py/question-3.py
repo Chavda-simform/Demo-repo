@@ -2,7 +2,7 @@
 
 # -----------------------------complited but not optimal-----------------------------------------------------
 # ***********************************************************************************************************
-
+# Method -2
 input = ["eat","tea","tan","ate","nat","bat"]
 in2 = []
 result = []
@@ -21,16 +21,6 @@ for i in range(len(in2)):
                     diic[in2[j]].append(input[j])
             else:
                  diic[in2[j]] = [input[j]]
-            # # print(input[ic])
-            # if input[i] not in result:
-            #     vv = input[i]
-            #     v.append(input[i])
-            #     # print(input[i])
-            #     # in2.append(input[ic])
-            # jc +=1
-        # print("next line")
-    # result.append(v)
-    # ic += 1 
 
 print("result is :-" , list (diic.values()))
 
