@@ -1,29 +1,38 @@
 
 
-# -----------------------------not complit ----------------------------------------------------------------
+# -----------------------------complited but not optimal-----------------------------------------------------
 # ***********************************************************************************************************
 
-# input = ["eat","tea","tan","ate","nat","bat"]
-# in2 = []
-# result = []
-# for i in input:
-#     sh = ''.join(sorted(i))
-#     in2.append(sh)
-# ic = 0
+input = ["eat","tea","tan","ate","nat","bat"]
+in2 = []
+result = []
+for i in input:
+    sh = ''.join(sorted(i))
+    in2.append(sh)
+diic = {}
 
-# for i in in2:
-#     for j in in2:
+for i in range(len(in2)):
+    v = []
+    for j in range(len(in2)):
 
-#         if(i == j):
-#             # print(input[ic])
-#             if input[ic] not in in2:
-#                 print(input[ic])
-#                 # in2.append(input[ic])
-#             # jc +=1
-#     # result.append(in2)
-#     ic += 1 
+        if(i == j):
+            # print(in2[i] ,in2[j] , input[j])
+            if in2[j] in diic :
+                    diic[in2[j]].append(input[j])
+            else:
+                 diic[in2[j]] = [input[j]]
+            # # print(input[ic])
+            # if input[i] not in result:
+            #     vv = input[i]
+            #     v.append(input[i])
+            #     # print(input[i])
+            #     # in2.append(input[ic])
+            # jc +=1
+        # print("next line")
+    # result.append(v)
+    # ic += 1 
 
-# # print(result)
+print("result is :-" , list (diic.values()))
 
 
 # --------------------------------------Most Optimal Solution-------------------------------------------------
@@ -49,4 +58,4 @@ for i in input:
     else:
         dic[short] = [i]
 
-print(dic.values())
+print(list(dic.values()))
